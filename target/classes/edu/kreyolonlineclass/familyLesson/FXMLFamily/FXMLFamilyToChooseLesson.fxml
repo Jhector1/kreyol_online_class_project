@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox stylesheets="@../../myStyleSheet.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.kreyolonlineclass.familyLesson.ChooseLessonForFamily">
+   <children>
+      <ImageView fx:id="arrow" fitHeight="21.0" fitWidth="33.0" onMouseClicked="#goBackTo" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../arrowBack.jpeg" />
+         </image>
+         <styleClass>
+            <String fx:value="shapeOnOver" />
+            <String fx:value="paneBackgroundColor" />
+         </styleClass>
+      </ImageView>
+      <FlowPane alignment="CENTER" hgap="20.0" prefHeight="481.0" prefWidth="645.0" styleClass="paneBackgroundColor" stylesheets="@../../myStyleSheet.css" vgap="20.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="BOTTOM" prefHeight="141.0" prefWidth="242.0" text="Lesson 1">
+               <styleClass>
+                  <String fx:value="labelWhiteBackgroundColor" />
+                  <String fx:value="textSize" />
+               </styleClass>
+               <graphic>
+                  <Label fx:id="lesson1LbStart" alignment="CENTER" onMouseClicked="#lesson1LbStartOnClicked" prefHeight="34.0" prefWidth="222.0" text="Start">
+                     <styleClass>
+                        <String fx:value="textSize2" />
+                        <String fx:value="paneBackgroundColor" />
+                        <String fx:value="shapeOnOver" />
+                     </styleClass>
+                  </Label>
+               </graphic>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="BOTTOM" layoutX="10.0" layoutY="10.0" prefHeight="141.0" prefWidth="242.0" text="Lesson 2">
+               <styleClass>
+                  <String fx:value="labelWhiteBackgroundColor" />
+                  <String fx:value="textSize" />
+               </styleClass>
+               <graphic>
+                  <Label fx:id="lesson2LbStart" alignment="CENTER" onMouseClicked="#lesson2LbStartOnClicked" prefHeight="34.0" prefWidth="222.0" text="Start">
+                     <styleClass>
+                        <String fx:value="textSize2" />
+                        <String fx:value="paneBackgroundColor" />
+                        <String fx:value="shapeOnOver" />
+                     </styleClass>
+                  </Label>
+               </graphic>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="BOTTOM" disable="true" layoutX="252.0" layoutY="10.0" prefHeight="141.0" prefWidth="242.0" text="Lesson 3">
+               <styleClass>
+                  <String fx:value="labelWhiteBackgroundColor" />
+                  <String fx:value="textSize" />
+               </styleClass>
+               <graphic>
+                  <Label alignment="CENTER" prefHeight="34.0" prefWidth="222.0" text="Start">
+                     <styleClass>
+                        <String fx:value="textSize2" />
+                        <String fx:value="paneBackgroundColor" />
+                     </styleClass>
+                  </Label>
+               </graphic>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="BOTTOM" disable="true" layoutX="10.0" layoutY="151.0" prefHeight="141.0" prefWidth="242.0" text="Lesson 4">
+               <styleClass>
+                  <String fx:value="labelWhiteBackgroundColor" />
+                  <String fx:value="textSize" />
+               </styleClass>
+               <graphic>
+                  <Label alignment="CENTER" prefHeight="34.0" prefWidth="222.0" text="Start">
+                     <styleClass>
+                        <String fx:value="textSize2" />
+                        <String fx:value="paneBackgroundColor" />
+                     </styleClass>
+                  </Label>
+               </graphic>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="BOTTOM" disable="true" layoutX="252.0" layoutY="151.0" prefHeight="141.0" prefWidth="242.0" text="Lesson 5">
+               <styleClass>
+                  <String fx:value="labelWhiteBackgroundColor" />
+                  <String fx:value="textSize" />
+               </styleClass>
+               <graphic>
+                  <Label alignment="CENTER" prefHeight="34.0" prefWidth="222.0" text="Start">
+                     <styleClass>
+                        <String fx:value="textSize2" />
+                        <String fx:value="paneBackgroundColor" />
+                     </styleClass>
+                  </Label>
+               </graphic>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </FlowPane>
+   </children>
+</VBox>

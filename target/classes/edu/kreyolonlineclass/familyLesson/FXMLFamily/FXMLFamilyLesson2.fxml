@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" stylesheets="@../../myStyleSheet.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.kreyolonlineclass.FamilyLesson2">
+   <children>
+      <ImageView fx:id="arrow" fitHeight="21.0" fitWidth="33.0" onMouseClicked="#goBackTo" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../arrowBack.jpeg" />
+         </image>
+         <styleClass>
+            <String fx:value="shapeOnOver" />
+            <String fx:value="paneBackgroundColor" />
+         </styleClass>
+         <VBox.margin>
+            <Insets right="580.0" />
+         </VBox.margin>
+      </ImageView>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../myStyleSheet.css">
+         <bottom>
+            <HBox fx:id="boxBottom" alignment="CENTER" prefHeight="93.0" prefWidth="600.0" spacing="40.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lbCorrection" prefHeight="62.0" prefWidth="179.0" text="Label" visible="false">
+                     <font>
+                        <Font name="Lucida Sans Demibold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btCheck" disable="true" mnemonicParsing="false" onAction="#checkCorrection" prefWidth="107.0" text="Check">
+                     <VBox.margin>
+                        <Insets right="80.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="80.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btNext" mnemonicParsing="false" onAction="#nextButtonOnClicked" prefHeight="42.0" prefWidth="111.0" text="Continue" visible="false">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </bottom>
+         <top>
+            <VBox alignment="TOP_CENTER" prefHeight="241.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ProgressBar fx:id="progressBar" maxWidth="1000.0" prefHeight="18.0" prefWidth="599.0" progress="0.0" />
+                  <Label alignment="CENTER" prefHeight="82.0" prefWidth="403.0" text="Translate into Kreyol" textAlignment="CENTER">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbEnglishWord" alignment="CENTER" prefHeight="51.0" prefWidth="218.0" text="The man">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <HBox fx:id="boxChosenWords" alignment="CENTER" prefHeight="56.0" prefWidth="600.0" />
+               </children>
+            </VBox>
+         </top>
+         <center>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="600.0" spacing="20.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox fx:id="boxTigason" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="42.0" prefWidth="80.0" style="-fx-background-color: grey;">
+                     <children>
+                        <Label fx:id="lbTigason" alignment="CENTER" onMouseClicked="#actionOnWord" prefHeight="42.0" prefWidth="80.0" styleClass="myLabel" text="Ti gason " textAlignment="CENTER">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="boxTifi" alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="42.0" prefWidth="33.0" style="-fx-background-color: grey;">
+                     <children>
+                        <Label fx:id="lbTiFi" alignment="CENTER" onMouseClicked="#actionOnWord" prefHeight="42.0" prefWidth="35.0" styleClass="myLabel" text="an" textAlignment="CENTER">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="boxNonm" alignment="CENTER" layoutX="111.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: grey;">
+                     <children>
+                        <Label fx:id="lbNonm" alignment="CENTER" onMouseClicked="#actionOnWord" prefHeight="42.0" prefWidth="46.0" styleClass="myLabel" text="nan" textAlignment="CENTER">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="boxBebe" alignment="CENTER" layoutX="213.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="42.0" prefWidth="67.0" style="-fx-background-color: grey;">
+                     <children>
+                        <Label fx:id="lbBebe" alignment="CENTER" onMouseClicked="#actionOnWord" prefHeight="42.0" prefWidth="67.0" styleClass="myLabel" text="Nonm " textAlignment="CENTER">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="boxFanm" alignment="CENTER" layoutX="314.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="42.0" prefWidth="40.0" style="-fx-background-color: grey;">
+                     <children>
+                        <Label fx:id="lbFanm" alignment="CENTER" onMouseClicked="#actionOnWord" prefHeight="42.0" prefWidth="81.0" styleClass="myLabel" text="la" textAlignment="CENTER">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+   </children>
+</VBox>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="600.0" stylesheets="@../../myStyleSheet.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.kreyolonlineclass.familyLesson.FamilyLesson1">
+   <center>
+      <HBox fx:id="middleBbox" alignment="CENTER" prefHeight="251.0" prefWidth="600.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="label" alignment="CENTER" contentDisplay="TOP" onMouseClicked="#clickImage" prefHeight="188.0" prefWidth="153.0" stylesheets="@../../myStyleSheet.css" text="Fanm nan">
+               <graphic>
+                  <ImageView fx:id="imageView1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" styleClass="labelBorder">
+                     <image>
+                        <Image url="@../image/woman.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="labelBorder" />
+                  <String fx:value="labelOnHover" />
+                  <String fx:value="shapeOnOver" />
+               </styleClass>
+            </Label>
+            <Label fx:id="label1" alignment="CENTER" contentDisplay="TOP" onMouseClicked="#clickImage1" prefHeight="188.0" prefWidth="153.0" text="Tigason an">
+               <graphic>
+                  <ImageView fx:id="imageView2" fitHeight="150.0" fitWidth="132.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/boy.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="labelBorder" />
+                  <String fx:value="labelOnHover" />
+                  <String fx:value="shapeOnOver" />
+               </styleClass>
+            </Label>
+            <Label fx:id="label2" alignment="CENTER" contentDisplay="TOP" onMouseClicked="#clickImage2" prefHeight="188.0" prefWidth="153.0" text="Nonm nan">
+               <graphic>
+                  <ImageView fx:id="imageView3" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/man.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="labelBorder" />
+                  <String fx:value="labelOnHover" />
+                  <String fx:value="shapeOnOver" />
+               </styleClass>
+            </Label>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </HBox>
+   </center>
+   <top>
+      <VBox alignment="CENTER" prefHeight="121.0" prefWidth="601.0" spacing="20.0" stylesheets="@../../myStyleSheet.css" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <ImageView fx:id="arrow" fitHeight="21.0" fitWidth="33.0" onMouseClicked="#goBackTo" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets right="580.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@../arrowBack.jpeg" />
+               </image>
+               <styleClass>
+                  <String fx:value="shapeOnOver" />
+                  <String fx:value="paneBackgroundColor" />
+               </styleClass>
+            </ImageView>
+            <ProgressBar fx:id="progressBar" maxWidth="1000.0" prefHeight="17.0" prefWidth="600.0" progress="0.0" />
+            <Text fx:id="textQuestion" strokeType="OUTSIDE" strokeWidth="0.0" text="which one of these is &quot;boy&quot;? ">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children></VBox>
+   </top>
+   <bottom>
+      <HBox fx:id="box" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+         <children>
+            <Label fx:id="labelCorrection" alignment="CENTER" prefHeight="62.0" prefWidth="179.0" text="Label" textAlignment="CENTER" visible="false">
+               <font>
+                  <Font name="Lucida Sans Demibold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btCheck" alignment="CENTER" contentDisplay="CENTER" disable="true" mnemonicParsing="false" onAction="#checkName" prefHeight="51.0" prefWidth="107.0" styleClass="shapeOnOver" text="Check">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="80.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btContinue" mnemonicParsing="false" onAction="#continueAction" prefHeight="42.0" prefWidth="111.0" styleClass="shapeOnOver" text="Continue" visible="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

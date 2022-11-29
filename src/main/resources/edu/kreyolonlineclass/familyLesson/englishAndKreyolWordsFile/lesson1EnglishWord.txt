@@ -1,0 +1,6 @@
+girl 
+baby 
+boy
+man
+woman
+Dog

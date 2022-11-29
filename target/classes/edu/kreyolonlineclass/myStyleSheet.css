@@ -1,0 +1,51 @@
+.myLabel{
+    -fx-background-color: lightsteelblue;
+    -fx-text-fill:grey;
+}
+.paneBackgroundColor{
+    -fx-background-color: lightsteelblue;
+}
+.labelWhiteBackgroundColor{
+    -fx-background-color: white;
+
+}
+.roundBorderImage{
+    -fx-border-radius: 50%;
+    -fx-border-color: grey;
+    -fx-font-size: 14px;
+}
+.buttonBackground:hover{
+    -fx-border-color: red;
+    -fx-stroke: green;
+}
+.labelOnHover:hover{
+    -fx-pref-width: 163px;
+    -fx-pref-height: 198px;
+    -fx-background-color: lightsteelblue;
+}
+.labelBorder{
+    -fx-border-style: solid;
+    -fx-stroke: red;
+    -fx-border-color: grey;
+}
+.rectangleBackground{
+    -fx-fill: null;
+}
+.textBackground{
+    -fx-background-color: red;
+        -fx-fill: red;}
+.textSize{
+    -fx-font-size: 48px;
+}
+.textSize2{
+     -fx-font-size: 18px;
+ }
+#labelBackgroundColor{
+     -fx-border: red;
+     -fx-font-size: 70px;
+ }
+ .changeImageColor{
+ }
+.shapeOnOver:hover{
+    -fx-cursor: hand;
+}
